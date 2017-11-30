@@ -29,7 +29,9 @@ public class SolutionDao {
 			String author = rs.getString("user.name");
 			SolutionDTO sDTO = new SolutionDTO(solutionId, title, 0, date);
 			result.add(new SolutionWithAuthor(sDTO, author));
+			
 		}
+		//System.out.println(result.toString()); to na testy
 		
 		return result;
 		

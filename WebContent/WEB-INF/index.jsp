@@ -12,28 +12,24 @@
 
 	<%@ include file="/WEB-INF/fragments/header.jspf"%>
 
-	<table>
 
+	<table>
 		<tr>
 			<td>Tytul</td>
 			<td>Autor</td>
 			<td>Data dodania</td>
 			<td>Akcje</td>
 		</tr>
-
-		<c:forEach var="s" items="${solutions}">
+		<c:forEach var='s' items='${solutions}'>
 			<tr>
 				<td>${s.solution.title}</td>
 				<td>${s.authorName}</td>
 				<td>${s.solution.submitionDate}</td>
-				<td><a href='Solutions?id=${s.solution.id}'>Szczegoly</a></td>
+				<td><a href='DetailsSolution?id=${s.solution.id}'>Szczegoly</a></td>
 			</tr>
 		</c:forEach>
 	</table>
 
-	Content
-
 	<%@ include file="/WEB-INF/fragments/footer.jspf"%>
-
 </body>
 </html>

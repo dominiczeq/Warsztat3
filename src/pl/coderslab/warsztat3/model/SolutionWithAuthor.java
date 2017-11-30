@@ -8,7 +8,7 @@ public class SolutionWithAuthor {
 	public SolutionWithAuthor(SolutionDTO solution, String authorName) {
 		super();
 		this.solution = solution;
-		AuthorName = authorName;
+		this.AuthorName = authorName;
 	}
 	public SolutionDTO getSolution() {
 		return solution;

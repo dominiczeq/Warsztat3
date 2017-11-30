@@ -15,13 +15,14 @@ public class Solution {
 		
 		try {
 			conn = DbUtil.getConn();
-			SolutionDao.loadAllWithAuthor(conn, count);
+			result = SolutionDao.loadAllWithAuthor(conn, count);
 			
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
-		
+		//System.out.println(result.toString());
 		return result;
+		
 	}
 
 }

@@ -3,6 +3,6 @@
     pageEncoding="UTF-8"%>
 
 <p>
-<a href='index.jsp'>Strona glowna</a>
+<a href='home'>Strona glowna</a>
 
 </p>
